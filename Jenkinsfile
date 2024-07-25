@@ -1,5 +1,9 @@
 pipeline {
     agent any
+     tools {
+        maven 'MAVEN3.9.8'
+    }
+
     stages {
         stage('Build') {
             steps {
